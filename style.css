@@ -253,6 +253,25 @@ footer .navigation {
 }
 
 @media (max-width: 576px) {
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 8px 10px;
+    z-index: 1000;
+  }
+  
+  /* Важно: добавляем отступ для основного контента, 
+     чтобы он не оказался под фиксированным header */
+  main {
+    margin-top: 60px; /* Регулируйте значение в зависимости от высоты вашего header */
+  }
+  
+  header > a h2 {
+    font-size: 1.1rem;
+  }
   
   nav {
     width: 100%;
