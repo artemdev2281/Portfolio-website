@@ -118,6 +118,72 @@ img {
   border: 2px solid #518eff;
 }
 
+/* Базовые стили для всех устройств */
+/* Ваши текущие стили */
+
+/* Для планшетов (от 768px до 1024px) */
+@media (max-width: 1024px) {
+  .information {
+    column-gap: 100px;
+  }
+  
+  .my_skills {
+    column-gap: 80px;
+  }
+  
+  .all_projects, .all_cases {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .project, .case {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
+/* Для мобильных устройств (до 767px) */
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+  }
+  
+  .information {
+    flex-direction: column;
+    column-gap: 0;
+    padding: 15px;
+  }
+  
+  .my_image img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+  }
+  
+  .my_skills {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .hard_skills, .soft_skills {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
 
 
 
